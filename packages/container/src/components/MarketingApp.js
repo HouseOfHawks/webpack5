@@ -4,7 +4,9 @@ import React, { useRef, useEffect } from 'react';
 export default () => {
     const ref = useRef(null);
 
-    useEffect(() => mountMarketing(ref.current), []);
+    useEffect(() => {
+        mountMarketing(ref.current);
+    }, []);
 
     return <div ref={ref} />;
 };
